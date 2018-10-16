@@ -1,10 +1,15 @@
 import {Component} from '@angular/core';
 
 
-
+//các thuộc tính khi khởi tạo 1 component nha 
 @Component ({
-    template:'<h3> This is my component <h3>',
-    selector: 'app-word'  // tag html mà ta sử dụng
+    templateUrl:'./word.component.html',
+    selector: 'app-word' , // tag html mà ta sử dụng
+
+    //css
+    styleUrls: ['./word.component.css']
+
+
 })
 
 

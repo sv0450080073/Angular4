@@ -17,6 +17,16 @@ import {Component} from '@angular/core';
  export class WordCompConent {
  en : string  ='Hello';
  vn : string ='Xin chào';
+ imageUrl ='https://angular.io/assets/images/logos/angular/logo-nav@2x.png';
+ forgot =false;
+
+ 
+ //hàm 
+
+ Toggeforgot()
+ {
+     this.forgot=!this.forgot;
+ }
 
 
 

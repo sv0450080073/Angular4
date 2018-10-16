@@ -9,6 +9,8 @@ export class BookComponent implements OnInit {
 
   constructor() { }
 
+
+  // phương thức kế thừa  khi tạo bằng cli
   ngOnInit() {
   }
 

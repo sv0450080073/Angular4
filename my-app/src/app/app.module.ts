@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component'; 
 
 import { WordCompConent} from './word/word.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [ 
     AppComponent,
-    WordCompConent
+    WordCompConent,
+    BookComponent
     
   ],
   imports: [

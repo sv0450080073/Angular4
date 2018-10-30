@@ -6,7 +6,12 @@
 
 
 </div>
-<input placeholder="English" [(ngModel)]="newEn" /> <br>
-<input placeholder="Vietnamese" [(ngModel)]="newVn" />
+
+
+<div *ngIf="isShowForm">
+<input  placeholder="English" [(ngModel)]="newEn" /> <br>
+<input  placeholder="Vietnamese" [(ngModel)]="newVn" />
 <br><br> 
 <button (click)="addWord()">Thêm từ mới</button>
+</div>
+<button (click)="isShowForm=true" *ngIf ="!isShowForm">Thêm từ mới</button>

@@ -9,13 +9,14 @@
   <br> <br>
 
 <div *ngFor="let word of arrWords">
-  
+
   <div class="words" *ngIf="getShowStatus(word.memorized)">
     <h4 [ngStyle]="{color:word.memorized ? 'green':'red'}">
 
       {{word.en}}</h4>
     <p>{{word.vn}}</p>
     <button (click)="removeWord(word.id); ">Xóa</button>
+    <button (click)="word.memorized=!word.memorized ">{{word.memorized ? 'chưa thuộc':'đã thuộc'}}</button>
   </div>
 </div>
 

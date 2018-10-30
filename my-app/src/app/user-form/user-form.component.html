@@ -1,0 +1,5 @@
+<input placeholder="Enter username "[(ngModel)]="name" #txtUsername> 
+<h3 [style.color]="is2lai ? 'red': 'black'"> Your Name is: {{ name }}</h3>
+<code> {{txtUsername.value | json}}</code>
+<div [class]="is2lai ?'circle':'square'"></div>
+<div [class.circle]="!is2lai" [class.square]="is2lai" ></div>

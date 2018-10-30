@@ -21,7 +21,31 @@ isShowForm =false;
   
   constructor() { }
 
+
   ngOnInit() {
+  }
+  
+  filterStatus="XEM_TAT_CA";
+
+  removeWord(id:number)
+  {
+
+    //tìm chỉ số index của phần tử muốn xóa 
+   const index= this.arrWords.findIndex(word => word.id===id);
+
+   //xóa vị trí đã tìm được
+   this.arrWords.splice(index,1);
+  
+  }
+  getShowStatus(memorized:boolean)
+  {
+
+    const dkXemTatCa= this.filterStatus==='XEM_TAT_CA';
+    const dkXemDaNho= this.filterStatus==='XEM_DA_NHO' && memorized;
+    const dkXemChuaNho= this.filterStatus==='XEM_CHUA_NHO' && !memorized;
+    return dkXemTatCa ||dkXemDaNho ||dkXemChuaNho;
+
+
   }
   isShowFormf()
   {

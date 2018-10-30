@@ -14,6 +14,7 @@ export class StructComponent implements OnInit {
     this.isShow=!this.isShow;
     
   }
+  arrLesson =['Angular','NodeJS','React'];
   constructor() { }
 
   ngOnInit() {

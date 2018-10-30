@@ -1,4 +1,9 @@
 <p *ngIf="isShow"> 
   struct works!
 </p>
+<ul>
+  <li *ngFor="let i of arrLesson" >
+    <p>{{i}}</p>
+  </li>
+</ul>
 <button (click)="isShowf()">Ấn vào đây </button>

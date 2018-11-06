@@ -23,6 +23,11 @@ import {CardComponent} from './card.component';
 import { LearnPipeComponent } from './learn-pipe/learn-pipe.component';
 import {RoundPipe} from './round.pipe';
 import {IpComponent} from './ip.component';
+
+import {IpService } from './ip.service';
+import { WeatherComponent } from './weather/weather.component';
+
+
 @NgModule({
   declarations: [ 
     AppComponent,
@@ -38,7 +43,8 @@ import {IpComponent} from './ip.component';
     CardComponent,
     LearnPipeComponent,
     IpComponent,
-    RoundPipe
+    RoundPipe,
+    WeatherComponent
   
 
     
@@ -49,7 +55,7 @@ import {IpComponent} from './ip.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [IpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

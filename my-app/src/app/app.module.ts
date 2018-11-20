@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
+
+
 //dịch vụ cần trong project
 import { AppComponent } from './app.component'; 
 import{ FormsModule } from '@angular/forms';  
@@ -26,6 +28,8 @@ import {IpComponent} from './ip.component';
 
 import {IpService } from './ip.service';
 import { WeatherComponent } from './weather/weather.component';
+import {SignInComponent} from './sign-in.component';
+import { AppRoutingModule} from './app-routing.module'
 
 
 @NgModule({
@@ -44,16 +48,20 @@ import { WeatherComponent } from './weather/weather.component';
     LearnPipeComponent,
     IpComponent,
     RoundPipe,
-    WeatherComponent
+    WeatherComponent,
+    SignInComponent
+   
   
 
     
   ],
   //two way binding
   imports: [
-    BrowserModule,
+    BrowserModule,  
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
+   
   ],
   providers: [IpService],
   bootstrap: [AppComponent]
